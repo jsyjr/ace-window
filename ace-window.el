@@ -209,8 +209,8 @@ or
     (((background light)) (:foreground "gray0")))
   "Face for whole window background during selection.")
 
-(defface aw-mode-line-face
-  '((t (:inherit mode-line-buffer-id)))
+(defface mode-line-window-id
+  '((t :inherit mode-line-inactive :background "black" :foreground "red" :wide t :bold t))
   "Face used for displaying the ace window key in the mode-line.")
 
 (defface aw-key-face
@@ -959,7 +959,7 @@ window list."
         leaf 'ace-window-path
         (propertize
          (apply #'string (reverse path))
-         'face 'aw-mode-line-face))))))
+         'face 'mode-line-window-id))))))
 
 (provide 'ace-window)
 
