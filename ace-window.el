@@ -205,7 +205,8 @@ or
   "Face for minibuffer leading char.")
 
 (defface aw-background-face
-  '((t (:foreground "gray40")))
+  '((((background dark)) (:foreground "gray100"))
+    (((background light)) (:foreground "gray0")))
   "Face for whole window background during selection.")
 
 (defface aw-mode-line-face
